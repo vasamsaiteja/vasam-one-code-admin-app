@@ -1,0 +1,123 @@
+.bottom-pagination-container {
+  /* border: 1px solid darkblue; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.pagination-container-numbers {
+  /* border: 1px solid green; */
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0 !important;
+  margin-right: 20px !important;
+}
+.card-pagination-container {
+  /* border: 1px solid darkcyan; */
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  /* width:60vw; */
+}
+.list-num {
+  font-family: 'Roboto';
+  margin-right: 20px;
+  text-decoration: none;
+  /* border: 1px solid #00bfff  !important; */
+  background-color: #0d6efd !important;
+  height: 35px;
+  width: 35px;
+  border-radius: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 760px) {
+  .card-pagination-container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .panel-container {
+    /* width:100%; */
+    justify-self: center;
+    /* margin-bottom: 10px; */
+  }
+  .delete-button {
+    width: 100%;
+    font-size: 10px;
+  }
+  .bottom-pagination-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .list-num {
+    margin-right: 5px;
+  }
+  .pagination-container-numbers {
+    margin-right: 0.5rem !important;
+    padding-left: 10px !important;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+.panel-container {
+  align-self: center;
+}
+.pagination-link {
+  text-decoration: none;
+  color: #fff;
+}
+.delete-button {
+  background-color: #ff5171;
+  color: #fff;
+  font-family: 'Roboto';
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 10px;
+  padding-top: 0;
+  align-self: center;
+  /* border:1px solid blue; */
+  height: 45px;
+  width: 120px;
+  padding: 2px;
+}
+
+.panel-icons-1,
+.panel-icons-2 {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .panel-icons-1,
+  .panel-icons-2 {
+    font-size: 1rem;
+  }
+  .panel-icons-1 {
+    display: block;
+  }
+  .panel-icons-2 {
+    display: none;
+  }
+  .list-num {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .panel-icons-1,
+  .panel-icons-2 {
+    font-size: 1rem;
+    display: none;
+  }
+}

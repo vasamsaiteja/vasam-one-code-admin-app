@@ -1,0 +1,106 @@
+.list-user-details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 300px;
+}
+hr {
+  color: grey;
+}
+p {
+  font-size: 20px;
+  font-family: 'Roboto';
+  /* border: 1px solid green; */
+  width: 20%;
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap; */
+  text-align: center;
+}
+.input-type-size {
+  align-self: center;
+  /* width:7vw; */
+}
+@media screen and (max-width: 760px) {
+  /* .input-type-size{
+    width:4vw;
+  } */
+}
+.icons-container {
+  /* border: 1px solid green; */
+  align-self: center;
+  padding: 5px;
+}
+.edit-icon {
+  margin-right: 10px;
+  /* border: 1px solid red; */
+  font-size: 1rem;
+}
+.trash-icon {
+  color: red;
+  font-size: 1rem;
+}
+@media screen and (max-width: 760px) {
+  .edit-icon {
+    font-size: 10px;
+  }
+  .trash-icon {
+    font-size: 10px;
+  }
+}
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.form-container input {
+  line-height: normal;
+  margin-right: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #0d6efd;
+  padding: 10px;
+}
+
+.form-container input[type='submit'] {
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.email-paragraph {
+  width: 20%;
+  font-size: 15px;
+  align-self: center;
+}
+.name-paragraph {
+  font-size: 15px;
+  align-self: center;
+}
+.role-paragraph {
+  font-size: 15px;
+  align-self: center;
+}
+@media screen and (max-width: 760px) {
+  .email-paragraph {
+    font-size: 10px;
+    align-self: center;
+    width: 100%;
+  }
+
+  .name-paragraph {
+    font-size: 10px;
+    align-self: center;
+    width: 100%;
+  }
+  .role-paragraph {
+    font-size: 10px;
+    align-self: center;
+    width: 100%;
+  }
+}
