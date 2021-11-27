@@ -9,7 +9,6 @@ class UserDetails extends Component {
     email: '',
     role: '',
     isChecked: false,
-    checkedUsers: [],
   }
 
   onUserDetails = () => {

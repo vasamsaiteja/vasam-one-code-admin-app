@@ -26,6 +26,7 @@ class UserList extends Component {
       selectedUserData,
       deleteCheckedUser,
       handleEdit,
+      selectedAllUser,
     } = this.props
     const {isChecked} = this.state
     const searchResults = userData.filter(eachDetail =>
@@ -34,6 +35,8 @@ class UserList extends Component {
     const handleSelectedAllUser = e => {
       const isAllChecked = e.target.checked
       this.setState({isChecked: isAllChecked})
+      console.log(e.target.checked)
+      selectedAllUser(e.target.checked)
     }
     return (
       <>

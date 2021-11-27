@@ -80,23 +80,37 @@ class AdminApp extends Component {
 
     // console.log('checkedUserData', this.state.userData)
   }
-  selectedAllUser = userList => {
-    for (let per of userList) {
-      const {userData} = this.state
-      const checkedUserData = userData.map(each => {
-        if (each.id === per.id) {
-          return {...each, isChecked: !each.isChecked}
-        } else {
-          return each
-        }
-      })
+  // selectedAllUser = userList => {
+  //   for (let per of userList) {
+  //     const {userData} = this.state
+  //     const checkedUserData = userData.map(each => {
+  //       if (each.id === per.id) {
+  //         return {...each, isChecked: !each.isChecked}
+  //       } else {
+  //         return each
+  //       }
+  //     })
 
-      this.setState({
-        userData: checkedUserData,
-      })
-    }
+  //     this.setState({
+  //       userData: checkedUserData,
+  //     })
+  //   }
+  // }
+
+  selectedAllUser = checkedData => {
+    const {userData} = this.state
+    const checkedAllUserData = userData.map(each => {
+      if (checkedData) {
+        console.log(checkedData)
+        return {...each, isChecked: !each.isChecked}
+      } else {
+        return each
+      }
+    })
+    this.setState({
+      userData: checkedAllUserData,
+    })
   }
-
   paginate = pageNumber => {
     this.setState({currentPage: pageNumber})
   }
@@ -112,6 +126,7 @@ class AdminApp extends Component {
     } = this.state
 
     // console.log('selectedUserData', selectedUserData)
+    console.log(userData)
 
     const indexOfLastUser = currentPage * usersPerPage
     const indexOfFirstUser = indexOfLastUser - usersPerPage
